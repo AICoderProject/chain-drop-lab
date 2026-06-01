@@ -4,6 +4,10 @@ We are proud to announce the initial release of **chain-drop-lab**, a highly opt
 
 This release marks the baseline stable version of the code, designed to serve both as a highly engaging browser game and a pristine educational template for developers studying object-oriented programming in web ecosystems.
 
+### 🌐 Play Live Demo
+The game is successfully hosted and ready to play on GitHub Pages:
+[https://aicoderproject.github.io/chain-drop-lab/](https://aicoderproject.github.io/chain-drop-lab/)
+
 ---
 
 ## What's New

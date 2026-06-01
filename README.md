@@ -3,6 +3,10 @@
 `chain-drop-lab` は、ブラウザで動作する完全オリジナルの「落ち物連鎖パズルゲーム」です。
 美しく洗練された Canvas 描画エフェクト、Web Audio API によるシンセサイザー効果音、そして「超大連鎖を極めて簡単に体験できること」を最優先して作られた、商用利用可能かつクリーンなオープンソースソフトウェアです。
 
+### 🌐 Live Demo
+現在、GitHub Pages にてオンライン上で実際にプレイ可能です！
+[https://aicoderproject.github.io/chain-drop-lab/](https://aicoderproject.github.io/chain-drop-lab/)
+
 ---
 
 ## 🌟 主な特徴
