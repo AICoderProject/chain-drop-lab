@@ -152,9 +152,16 @@ export class Game {
 
   private initInput(): void {
     window.addEventListener('keydown', (e) => {
+      // Prevent default page scroll behaviors for typical game keys
+      const gameKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', 'Enter', 'KeyZ', 'KeyX', 'KeyP'];
+      if (gameKeys.includes(e.code)) {
+        e.preventDefault();
+      }
+
       if (this.state.gameOver || this.state.paused || this.isProcessingChain) {
-        if (e.code === 'Space') {
-          e.preventDefault();
+        if (e.code === 'Space' || e.code === 'Enter') {
+          this.handleSpaceKey();
+        } else if (e.code === 'KeyP' && !this.state.gameOver && !this.isProcessingChain) {
           this.handleSpaceKey();
         }
         return;
@@ -162,33 +169,28 @@ export class Game {
 
       switch (e.code) {
         case 'ArrowLeft':
-          e.preventDefault();
           this.moveActive(-1);
           break;
         case 'ArrowRight':
-          e.preventDefault();
           this.moveActive(1);
           break;
         case 'ArrowDown':
-          e.preventDefault();
           this.softDrop();
           break;
         case 'ArrowUp':
-          e.preventDefault();
           if (this.state.mode === 'PRACTICE' || this.state.mode === 'DEMO') {
             this.quickDrop();
           }
           break;
         case 'KeyZ':
-          e.preventDefault();
           this.rotateActive(-1);
           break;
         case 'KeyX':
-          e.preventDefault();
           this.rotateActive(1);
           break;
         case 'Space':
-          e.preventDefault();
+        case 'Enter':
+        case 'KeyP':
           this.handleSpaceKey();
           break;
       }

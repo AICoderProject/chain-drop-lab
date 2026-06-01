@@ -148,6 +148,11 @@ body {
   height: auto;
   border-radius: 12px;
   aspect-ratio: 800 / 650;
+  outline: none;
+}
+
+#game-canvas:focus {
+  box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 .game-sidebar {

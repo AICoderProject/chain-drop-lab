@@ -83,4 +83,22 @@ describe('Game Modes and State Management', () => {
     expect(demoMovesQueue[0]).toHaveProperty('x');
     expect(demoMovesQueue[0]).toHaveProperty('rot');
   });
+
+  it('should handle keyboard controls correctly', () => {
+    const game = new Game(canvas);
+    
+    // Simulate ArrowLeft keydown to move active gem left
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const originalX = (game as any).activeGems[0].x;
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'ArrowLeft' }));
+    
+    // Gem axis X should decrease by 1
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    expect((game as any).activeGems[0].x).toBe(originalX - 1);
+
+    // Simulate KeyP down to trigger pause state
+    expect(game.state.paused).toBe(false);
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'KeyP' }));
+    expect(game.state.paused).toBe(true);
+  });
 });

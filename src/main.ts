@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Create game instance
   const game = new Game(canvas);
   game.start();
+  canvas.focus();
 
   // Mute button logic
   const muteBtn = document.getElementById('btn-mute') as HTMLButtonElement | null;
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       SoundManager.setMuted(!isCurrentlyMuted);
       updateMuteButtonUI();
       muteBtn.blur();
+      canvas.focus();
     });
   }
 
@@ -70,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Remove focus to prevent spacebar from triggering button clicks
         button.blur();
+        canvas.focus();
       });
     }
   });
