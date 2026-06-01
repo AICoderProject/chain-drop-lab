@@ -30,22 +30,19 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          cache-dependency-path: 'chain-drop-lab/package.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install dependencies
         run: |
-          cd chain-drop-lab
           npm ci
 
       - name: Lint and Test
         run: |
-          cd chain-drop-lab
           npm run lint
           npm run test
 
       - name: Build
         run: |
-          cd chain-drop-lab
           npm run build
 
       - name: Setup Pages
@@ -54,7 +51,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'chain-drop-lab/dist'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
