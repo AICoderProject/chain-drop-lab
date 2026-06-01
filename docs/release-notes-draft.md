@@ -1,3 +1,13 @@
+# Release Notes: v1.0.1 (Keyboard Responsiveness Polish)
+
+We are excited to release **v1.0.1**, focusing on keyboard input latency improvements, focus recovery, browser scrolling preventions, and automated input simulation tests.
+
+### 🌐 Play Live Demo
+The game is hosted and ready to play on GitHub Pages:
+[https://aicoderproject.github.io/chain-drop-lab/](https://aicoderproject.github.io/chain-drop-lab/)
+
+---
+
 # Release Notes: v1.0.0 (Initial Public Release)
 
 We are proud to announce the initial release of **chain-drop-lab**, a highly optimized, commercial-friendly cascading puzzle browser game built in pure TypeScript + HTML5 Canvas.

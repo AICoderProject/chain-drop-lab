@@ -117,5 +117,22 @@ npm run verify
 
 ---
 
+## 📅 更新履歴 (Changelog)
+
+- **v1.0.1** (2026-06-02)
+  - キーボード操作レスポンスの飛躍的向上。
+  - `Enter`（決定/ポーズ）および `P` キー（一時停止トグル）ショートカットの追加。
+  - ボタンクリック操作後に自動で Canvas へフォーカスを戻す（`canvas.focus()`）制御を実装し、フォーカス競合バグを排除。
+  - ArrowキーやSpaceによる不要なブラウザスクロールの防止。
+  - キーイベントのシミュレーションテスト（Vitest）を新規導入。
+- **v1.0.0** (2026-06-02)
+  - 初回安定版リリース。
+  - Normal, Chain Boost, Practice, Demo の4モードの実装。
+  - Web Audio API による procedural（手続き的）な効果音シンセサイザーの搭載。
+  - GitHub Actions による Pages 自動 CI/CD デプロイの完了。
+  - 正式な MIT License の採択。
+
+---
+
 ## 🔬 Developer Status Note
 *This repository has been submitted for OpenAI Codex for Open Source consideration.*
