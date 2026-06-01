@@ -4,6 +4,10 @@ This directory is reserved for storing localized visual verification screenshots
 
 These screenshots prove clean operation across various resolutions, game modes, and accessibility environments.
 
+> [!NOTE]
+> **手動追加予定 / Pending Manual Addition**
+> The actual visual screenshot files listed below are scheduled to be captured and uploaded manually by the repository owner/maintainer in a future commit. Only the file mapping spec is declared here.
+
 ## File Directory Specification
 
 - **`title.png`**: The main title screen displaying game mode selection cards, sidebars, and volume buttons.
