@@ -39,10 +39,10 @@
             <h3>🎮 操作方法</h3>
             <ul class="control-list">
               <li><strong>← / →</strong>: ジェムの左右移動</li>
-              <li><strong>↓ (ArrowDown)</strong>: 高速落下</li>
-              <li><strong>Z / X</strong>: 左回転 / 右回転</li>
-              <li><strong>Space</strong>: ポーズ / ゲーム開始 / リトライ</li>
-              <li><strong>↑ (ArrowUp)</strong>: 即時落下 (Practice / Demoのみ)</li>
+              <li><strong>↓ (ArrowDown)</strong>: 高速落下 (Soft Drop)</li>
+              <li><strong>Z / X</strong>: 左回転 / 右回転 (Rotate)</li>
+              <li><strong>Space / Enter / P</strong>: 開始 / リトライ / ポーズ (Start / Retry / Pause)</li>
+              <li><strong>↑ (ArrowUp)</strong>: 即時落下 (Quick Drop / Practice / Demoのみ)</li>
             </ul>
             <p class="touch-note">※スマホ・タブレットは画面の左右タップで移動、中央タップで回転、下部タップで高速落下します。</p>
           </div>
@@ -53,6 +53,19 @@
         <p>🔬 Experimental Cascading Laboratory | Fully Original Puzzle Mechanism | No Trademarked Assets</p>
       </footer>
     </div>
+
+    <!-- Floating / Responsive Control Instructions Panel -->
+    <div class="floating-controls-panel" aria-label="操作方法">
+      <div class="floating-controls-title">🎮 Controls</div>
+      <ul class="floating-controls-list">
+        <li><span class="key-badge">←</span> / <span class="key-badge">→</span> : Move</li>
+        <li><span class="key-badge">↓</span> : Soft Drop</li>
+        <li><span class="key-badge">Z</span> / <span class="key-badge">X</span> : Rotate</li>
+        <li><span class="key-badge">Space</span> / <span class="key-badge">Enter</span> / <span class="key-badge">P</span> : Start / Retry / Pause</li>
+        <li><span class="key-badge">↑</span> : Quick Drop (Practice / Demo only)</li>
+      </ul>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
