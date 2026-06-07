@@ -1,5 +1,9 @@
 # 🔬 chain-drop-lab (チェイン・ドロップ・ラボ)
 
+<p align="center">
+  <img src="docs/screenshots/gameplay-demo.webp" alt="chain-drop-lab Gameplay Demo" width="600"/>
+</p>
+
 `chain-drop-lab` は、ブラウザで動作する完全オリジナルの**「落ち物連鎖パズルゲーム（falling chain puzzle game）」**です。
 美しく洗練された Canvas 描画エフェクト、Web Audio API によるシンセサイザー効果音、そして「超大連鎖を極めて簡単に体験できること」を最優先して作られた、商用利用可能かつクリーンなオープンソースソフトウェア（OSS）です。
 
