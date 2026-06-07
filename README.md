@@ -11,6 +11,12 @@
 - **Live Demo (Webサイト)**: [https://aicoderproject.github.io/chain-drop-lab/](https://aicoderproject.github.io/chain-drop-lab/)
 - **GitHub Repository**: [https://github.com/AICoderProject/chain-drop-lab](https://github.com/AICoderProject/chain-drop-lab)
 
+### 📸 Screenshots
+
+| Desktop Layout | Mobile Layout (under 900px width) |
+| :---: | :---: |
+| ![Desktop Gameplay](docs/screenshots/gameplay-desktop.png) | ![Mobile Responsive](docs/screenshots/gameplay-mobile.png) |
+
 ---
 
 ## 🌟 主な特徴
@@ -119,6 +125,11 @@ npm run verify
 
 ## 📅 更新履歴 (Changelog)
 
+- **v1.0.2** (2026-06-08)
+  - On-screen controls guide added (画面上の操作方法表示を追加)
+  - Responsive controls panel added (PC右下フローティング・モバイル画面下部インラインのレスポンシブ配置)
+  - Existing keyboard mappings preserved (v1.0.1仕様の操作体系の完全維持)
+  - Verified with ESLint, Vitest 17/17, and production build
 - **v1.0.1** (2026-06-02)
   - キーボード操作レスポンスの飛躍的向上。
   - `Enter`（決定/ポーズ）および `P` キー（一時停止トグル）ショートカットの追加。
